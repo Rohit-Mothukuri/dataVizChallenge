@@ -440,20 +440,20 @@ comparison_data = pd.merge(
 colors = ["darkblue" if team == "COL" else "lightblue" for team in comparison_data.home]
 
 # Create visualization
-fig, axes = plt.subplots(2, 1, figsize=(14, 10))
+fig, axes = plt.subplots(2, 1, figsize=(8, 6))
 
 axes[0].bar(comparison_data.home, comparison_data.runs_2010, color=colors)
-axes[0].set_title("2010 Season", fontsize=14, fontweight='bold')
+axes[0].set_title("2010 Season", fontsize=10, fontweight='bold')
 axes[0].set_ylabel("Average Runs per Game")
 axes[0].tick_params(axis='x', rotation=90)
-axes[0].grid(axis='y', alpha=0.3)
+axes[0].grid(axis='y', alpha=0.1)
 
 axes[1].bar(comparison_data.home, comparison_data.runs_2021, color=colors)
-axes[1].set_title("2021 Season", fontsize=14, fontweight='bold')
+axes[1].set_title("2021 Season", fontsize=10, fontweight='bold')
 axes[1].set_xlabel("Stadium")
 axes[1].set_ylabel("Average Runs per Game")
 axes[1].tick_params(axis='x', rotation=90)
-axes[1].grid(axis='y', alpha=0.3)
+axes[1].grid(axis='y', alpha=0.1)
 
 plt.tight_layout()
 plt.show()
