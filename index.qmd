@@ -58,7 +58,7 @@ Let's start by loading the baseball data and understanding what we're working wi
 
 ```{python}
 #| label: load-data
-#| echo: true
+#| echo: false
 #| message: false
 #| warning: false
 
@@ -170,7 +170,7 @@ Let's aggregate the data to get average runs per stadium:
 
 ```{python}
 #| label: stage-2-content
-#| echo: true
+#| echo: false
 
 # Stage 2: Curation of Content
 # Aggregate data to get average runs per stadium
@@ -249,7 +249,7 @@ Let's explore different visual approaches:
 
 ```{python}
 #| label: stage-3-mapping-exploration
-#| echo: true
+#| echo: false
 
 # Sort data for better visualization
 avgDF_2010_sorted = avgDF_2010.sort_values('totalRuns', ascending=True)
@@ -325,7 +325,7 @@ Let's create a publication-ready visualization:
 
 ```{python}
 #| label: stage-4-formatting
-#| echo: true
+#| echo: false
 
 # Stage 4: Formatting for Your Audience
 # Create a professional, publication-ready visualization
@@ -407,7 +407,7 @@ Let's create a comprehensive comparison between 2010 and 2021:
 
 ```{python}
 #| label: advanced-oo-techniques
-#| echo: true
+#| echo: false
 
 # Advanced Object-Oriented Techniques
 # Create a comprehensive comparison visualization
